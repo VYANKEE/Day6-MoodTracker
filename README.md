@@ -3,7 +3,7 @@
 Day 6: 45 Days of Code Challenge
 
 A clean and minimal web application designed to track daily mood and focus levels. This project emphasizes simple state management, local data persistence, and duplicate entry prevention logic using React.js.
-
+##LIVE DEMO -: https://day6-mood-tracker.vercel.app/
 ---
 
 ## Project Overview
