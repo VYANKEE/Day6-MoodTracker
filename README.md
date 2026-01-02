@@ -1,16 +1,61 @@
-# React + Vite
+# Daily Mood and Focus Log
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Day 6: 45 Days of Code Challenge
 
-Currently, two official plugins are available:
+A clean and minimal web application designed to track daily mood and focus levels. This project emphasizes simple state management, local data persistence, and duplicate entry prevention logic using React.js.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Project Name: Daily Mood Log
+- Application Type: Single Page Application (SPA)
+- Core Logic: Date-based unique entries and LocalStorage persistence.
+- Goal: To build a functional history tracking system with duplicate prevention.
 
-## Expanding the ESLint configuration
+## Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Daily Check-in: Users can log their mood and focus level once per day.
+- Duplicate Prevention: Logic prevents multiple entries for the same date to ensure data integrity.
+- Data Persistence: Uses Browser LocalStorage to save history indefinitely.
+- History View: Displays a chronological list of past entries with visual indicators.
+- Dark Mode UI: A premium, glassmorphism-inspired interface using pure CSS.
+
+## Technical Stack
+
+- Frontend Framework: React.js (Vite)
+- Styling: Pure CSS (CSS Variables, Grid, Flexbox)
+- State Management: React Hooks (useState, useEffect)
+- Icons: Lucide React
+
+## Project Structure
+
+- src/components/MoodSelector.jsx: Component for selecting mood options.
+- src/components/NoteInput.jsx: Text area component for adding optional notes.
+- src/components/HistoryList.jsx: Component to render the list of past logs.
+- src/App.jsx: Main controller handling date logic and storage.
+
+## Installation and Setup
+
+1. Clone the Repository
+   git clone https://github.com/VYANKEE/Day6-MoodTracker.git
+
+2. Navigate to the Directory
+   cd Day6-MoodTracker
+
+3. Install Dependencies
+   npm install
+
+4. Start the Application
+   npm run dev
+
+## Learning Outcomes
+
+- Handling date objects to create unique keys for data entries.
+- implementing read/write operations with LocalStorage in React.
+- conditional rendering based on daily submission status.
+- Designing a scalable CSS architecture for dark mode.
+
+---
+
+Developed by VYANKEE
