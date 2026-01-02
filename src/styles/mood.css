@@ -1,0 +1,77 @@
+/* Card Style */
+.card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* Mood Grid */
+.mood-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+
+.mood-btn {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-muted);
+  padding: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.mood-btn:hover { background: rgba(255, 255, 255, 0.08); transform: translateY(-2px); }
+
+.mood-btn.selected {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.4);
+}
+
+/* Note Input */
+textarea {
+  width: 100%;
+  background: rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  resize: none;
+  min-height: 80px;
+  margin-bottom: 15px;
+}
+
+textarea:focus { outline: none; border-color: var(--accent); }
+
+.save-btn {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.save-btn:hover { background: #e2e2e2; }
+.save-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* History List */
+.history-item {
+  padding: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.history-item:last-child { border-bottom: none; }
+.mood-icon { font-size: 1.5rem; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 50%; }
+.date { font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 4px; }
